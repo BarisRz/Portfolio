@@ -5,9 +5,12 @@ import github from "../assets/svg/github.svg";
 import linkedin from "../assets/svg/linkedin.svg";
 import dl from "../assets/svg/dl-icon.svg";
 import CV from "../assets/CV.pdf";
+import menu from "../assets/svg/menuburger.svg";
+import cross from "../assets/svg/cross.svg";
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 0;
@@ -25,11 +28,11 @@ function Navbar() {
   return (
     <div
       className={`fixed w-full z-20 flex justify-center transition duration-700 ${
-        scrolled && "bg-white"
+        scrolled && "bg-white shadow"
       }`}
     >
       <div className="w-[1440px]">
-        <nav className="flex py-4 justify-between">
+        <nav className="flex py-4 justify-between max-[1440px]:px-4 max-[1440px]:py-2">
           <Link
             to="hero"
             spy={true}
@@ -44,8 +47,8 @@ function Navbar() {
               </span>
             </p>
           </Link>
-          <div className="flex items-center">
-            <ul className="flex font-bold gap-12">
+          <div className="flex max-sm:flex-row-reverse items-center max-[900px]:text-xs">
+            <ul className="flex font-bold gap-12 max-[900px]:gap-8 max-sm:hidden">
               <li>
                 <Link
                   to="hero"
@@ -96,18 +99,24 @@ function Navbar() {
               </li>
               <li className="group">
                 <a href={CV} download>
-                  <div className="flex relative overflow-hidden cursor-pointer">
-                    Mon CV
+                  <div className="flex relative cursor-pointer">
+                    CV
                     <span className="underline-nav"></span>
                     <img
                       src={dl}
                       alt="Download CV"
-                      className="group-hover:animate-bounce transition"
+                      className="group-hover:animate-bounce transition w-6 max-[900px]:w-4"
                     />
                   </div>
                 </a>
               </li>
             </ul>
+            <img
+              src={menuOpen ? cross : menu}
+              alt="menuburger icon"
+              className="w-10 sm:hidden transition"
+              onClick={() => setMenuOpen(!menuOpen)}
+            />
             <div className="w-[1px] h-[40px] bg-black mx-6" />
             <div className="flex gap-2">
               <a
@@ -116,7 +125,7 @@ function Navbar() {
                 rel="noopener noreferrer"
               >
                 <img
-                  className="w-8 hover:scale-125 transition"
+                  className="w-8 hover:scale-125 transition max-[900px]:w-6"
                   src={github}
                   alt="github icon"
                 />
@@ -127,7 +136,7 @@ function Navbar() {
                 rel="noopener noreferrer"
               >
                 <img
-                  className="w-8 hover:scale-125 transition"
+                  className="w-8 hover:scale-125 transition max-[900px]:w-6"
                   src={linkedin}
                   alt="linkedin icon"
                 />
@@ -138,7 +147,7 @@ function Navbar() {
                 rel="noopener noreferrer"
               >
                 <img
-                  className="w-8 hover:scale-125 transition"
+                  className="w-8 hover:scale-125 transition max-[900px]:w-6"
                   src={frontendmentor}
                   alt="frontendmentor icon"
                 />

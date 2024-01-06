@@ -1,16 +1,34 @@
 import { Link } from "react-scroll";
-import photo from "../assets/test.png";
+import { useState, useEffect } from "react";
+import photo from "../assets/Photo.png";
+import photom from "../assets/PhotoM.png";
 import reactlogo from "../assets/svg/react.svg";
 import arrow from "../assets/svg/arrowdown.svg";
 
 function Hero() {
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1440);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth > 900);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
-    <div className="flex justify-center">
-      <div className="flex w-[95%]">
-        <img src={photo} alt="photo de Baris GUNAY" className="h-10/12" />
-        <div className="flex flex-col justify-center pl-10 pb-80">
-          <div className="flex">
-            <p className="font-bold text-5xl">
+    <div className="flex justify-center pt-16">
+      <div className="flex w-[95%] max-[900px]:flex-col items-center">
+        <img
+          src={isLargeScreen ? photo : photom}
+          alt="photo de Baris GUNAY"
+          className="h-10/12 max-[1440px]:w-[400px] object-cover"
+        />
+        <div className="flex flex-col justify-center px-10 pb-80">
+          <div className="flex items-center py-4 max-[900px]:justify-center">
+            <p className="font-bold text-5xl max-[1440px]:text-3xl max-sm:text-xl">
               Developpeur <span className="text-secondary">Full Stack</span>
             </p>
             <img
@@ -19,7 +37,7 @@ function Hero() {
               className="animate-spin-slow hover:animate-spin"
             />
           </div>
-          <p className="text-xl">
+          <p className="text-xl max-sm:text-lg max-[900px]:items-center">
             À l'issue de ma formation en "
             <span className="text-secondary font-semibold">
               Développement web et web mobile
