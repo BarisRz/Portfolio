@@ -19,3 +19,25 @@ body {
 .page {
   height: 100vh;
 }
+
+li {
+  .active {
+    color: $secondary;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.underline-nav {
+  position: absolute;
+  top: 20px;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.3s;
+}
+
+.cursor-pointer:hover .underline-nav {
+  width: 100%;
+}

@@ -9,7 +9,7 @@ export default {
         third: "#d9d9d9",
       },
       animation: {
-        "spin-slow": "spin 7s linear infinite",
+        "spin-slow": "spin 10s linear infinite",
       },
     },
   },

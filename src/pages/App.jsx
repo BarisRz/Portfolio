@@ -3,21 +3,27 @@ import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Projet from "../components/Projet";
 import Skill from "../components/Skill";
+import Contact from "../components/Contact";
 
 function App() {
   return (
     <>
-      <div className="page max-w-[1440px] m-auto flex flex-col justify-between">
-        <Navbar />
+      <Navbar />
+      <div className="page max-w-[1440px] m-auto flex items-end" id="hero">
         <Hero />
       </div>
-      <div className="bg-third">
+      <div className="bg-third" id="skills">
         <div className="page max-w-[1440px] m-auto">
           <Skill />
         </div>
       </div>
-      <div className="page max-w-[1440px] m-auto">
+      <div className="page max-w-[1440px] m-auto" id="projet">
         <Projet />
+      </div>
+      <div className="bg-third" id="contact">
+        <div className="page max-w-[1440px] m-auto">
+          <Contact />
+        </div>
       </div>
       <Footer />
     </>

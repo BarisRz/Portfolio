@@ -1,5 +1,7 @@
+import { Link } from "react-scroll";
 import photo from "../assets/test.png";
 import reactlogo from "../assets/svg/react.svg";
+import arrow from "../assets/svg/arrowdown.svg";
 
 function Hero() {
   return (
@@ -29,6 +31,26 @@ function Hero() {
             </span>
             " sur une durée de 15 mois à la Wild Code School.
           </p>
+          <div className="pt-4 group cursor-pointer w-[220px]">
+            <Link
+              to="skills"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="flex"
+            >
+              <p className="text-xl font-medium underline group-hover:decoration-secondary">
+                En apprendre plus
+              </p>
+              <span className="translate-y-2">
+                <img
+                  src={arrow}
+                  alt="arrow icon"
+                  className="pl-2 animate-bounce"
+                />
+              </span>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
