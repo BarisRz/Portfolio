@@ -37,8 +37,11 @@ function Navbar() {
             duration={500}
             className="cursor-pointer"
           >
-            <p className="font-black text-[32px]">
-              BG<span className="text-secondary">.</span>
+            <p className="group font-black text-[32px] hover:text-secondary transition">
+              BG
+              <span className="text-secondary group-hover:text-black transition">
+                .
+              </span>
             </p>
           </Link>
           <div className="flex items-center">

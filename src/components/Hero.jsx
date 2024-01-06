@@ -16,7 +16,7 @@ function Hero() {
             <img
               src={reactlogo}
               alt="react logo"
-              className="animate-spin-slow"
+              className="animate-spin-slow hover:animate-spin"
             />
           </div>
           <p className="text-xl">
