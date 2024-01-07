@@ -1,5 +1,6 @@
 import { Link } from "react-scroll";
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import photo from "../assets/Photo.png";
 import photom from "../assets/PhotoM.png";
 import reactlogo from "../assets/svg/react.svg";
@@ -19,8 +20,13 @@ function Hero() {
     };
   }, []);
   return (
-    <div className="flex justify-center pt-16">
-      <div className="flex w-[95%] max-[900px]:flex-col items-center">
+    <div className="flex justify-center pt-16 overflow-hidden">
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        className="flex w-[95%] max-[900px]:flex-col items-center"
+      >
         <img
           src={isLargeScreen ? photo : photom}
           alt="photo de Baris GUNAY"
@@ -71,7 +77,7 @@ function Hero() {
             </Link>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

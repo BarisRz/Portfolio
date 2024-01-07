@@ -23,7 +23,7 @@ function Skill() {
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.1 }}
+        transition={{ duration: 1 }}
         className="text-5xl font-extrabold pt-28 max-[500px]:text-3xl max-[500px]:text-center max-[500px]:pt-12"
       >
         Mes <span className="text-secondary">compétences</span>
@@ -32,7 +32,7 @@ function Skill() {
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.2 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
         className="text-4xl max-[500px]:text-3xl max-[900px]:text-center font-bold pt-20"
       >
         Front<span className="text-secondary">End</span>
@@ -41,7 +41,7 @@ function Skill() {
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.3 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
         className="frontend flex pt-4 flex-wrap"
       >
         <div className="skill-icon group flex-col hover:border-secondary">
@@ -91,7 +91,7 @@ function Skill() {
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.4 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
         className="text-4xl max-[500px]:text-3xl max-[900px]:text-center font-bold pt-20"
       >
         Back<span className="text-secondary">End</span>
@@ -100,7 +100,7 @@ function Skill() {
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
         className="frontend flex pt-4 flex-wrap"
       >
         <div className="skill-icon group flex-col hover:border-secondary">
@@ -126,7 +126,7 @@ function Skill() {
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.6 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
         className="text-4xl max-[500px]:text-3xl max-[900px]:text-center font-bold pt-20"
       >
         Outils<span className="text-secondary"> et autres</span>
@@ -135,7 +135,7 @@ function Skill() {
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.7 }}
+        transition={{ duration: 0.5, delay: 0.6 }}
         className="frontend flex pt-4 flex-wrap"
       >
         <div className="skill-icon group flex-col hover:border-secondary">
