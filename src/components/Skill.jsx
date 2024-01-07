@@ -20,24 +20,30 @@ function Skill() {
   return (
     <div className="max-[1440px]:px-4">
       <motion.p
-        initial={{ opacity: 0, x: 200 }}
+        initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.2 }}
+        transition={{ duration: 1, delay: 0.1 }}
         className="text-5xl font-extrabold pt-28 max-[500px]:text-3xl max-[500px]:text-center max-[500px]:pt-12"
       >
         Mes <span className="text-secondary">compétences</span>
       </motion.p>
       <motion.p
-        initial={{ opacity: 0, x: 100 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.3 }}
+        transition={{ duration: 1, delay: 0.2 }}
         className="text-4xl max-[500px]:text-3xl max-[900px]:text-center font-bold pt-20"
       >
         Front<span className="text-secondary">End</span>
       </motion.p>
-      <div className="frontend flex pt-4 flex-wrap">
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 0.3 }}
+        className="frontend flex pt-4 flex-wrap"
+      >
         <div className="skill-icon group flex-col hover:border-secondary">
           <img src={reacticon} alt="react icon" className="h-20" />
           <p className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 absolute top-28 max-[900px]:top-24 font-semibold">
@@ -80,11 +86,23 @@ function Skill() {
             Vite
           </p>
         </div>
-      </div>
-      <p className="text-4xl max-[500px]:text-3xl max-[900px]:text-center font-bold pt-20">
+      </motion.div>
+      <motion.p
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 0.4 }}
+        className="text-4xl max-[500px]:text-3xl max-[900px]:text-center font-bold pt-20"
+      >
         Back<span className="text-secondary">End</span>
-      </p>
-      <div className="frontend flex pt-4 flex-wrap">
+      </motion.p>
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 0.5 }}
+        className="frontend flex pt-4 flex-wrap"
+      >
         <div className="skill-icon group flex-col hover:border-secondary">
           <img src={node} alt="react icon" className="h-20" />
           <p className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 absolute top-28 max-[900px]:top-24 font-semibold">
@@ -103,11 +121,23 @@ function Skill() {
             MySQL
           </p>
         </div>
-      </div>
-      <p className="text-4xl max-[500px]:text-3xl max-[900px]:text-center font-bold pt-20">
+      </motion.div>
+      <motion.p
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 0.6 }}
+        className="text-4xl max-[500px]:text-3xl max-[900px]:text-center font-bold pt-20"
+      >
         Outils<span className="text-secondary"> et autres</span>
-      </p>
-      <div className="frontend flex pt-4 flex-wrap">
+      </motion.p>
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 0.7 }}
+        className="frontend flex pt-4 flex-wrap"
+      >
         <div className="skill-icon group flex-col hover:border-secondary">
           <img src={devtools} alt="Devtools of chrome icon" className="h-20" />
           <p className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 absolute top-28 max-[900px]:top-24 font-semibold">
@@ -144,7 +174,7 @@ function Skill() {
             Photoshop
           </p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
