@@ -19,12 +19,24 @@ import photoshop from "../assets/svg/photoshop.svg";
 function Skill() {
   return (
     <div className="max-[1440px]:px-4">
-      <h2 className="text-5xl font-extrabold pt-28 max-[500px]:text-3xl max-[500px]:text-center max-[500px]:pt-12">
+      <motion.p
+        initial={{ opacity: 0, x: 200 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 0.2 }}
+        className="text-5xl font-extrabold pt-28 max-[500px]:text-3xl max-[500px]:text-center max-[500px]:pt-12"
+      >
         Mes <span className="text-secondary">compétences</span>
-      </h2>
-      <p className="text-4xl max-[500px]:text-3xl max-[900px]:text-center font-bold pt-20">
+      </motion.p>
+      <motion.p
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 0.3 }}
+        className="text-4xl max-[500px]:text-3xl max-[900px]:text-center font-bold pt-20"
+      >
         Front<span className="text-secondary">End</span>
-      </p>
+      </motion.p>
       <div className="frontend flex pt-4 flex-wrap">
         <div className="skill-icon group flex-col hover:border-secondary">
           <img src={reacticon} alt="react icon" className="h-20" />
