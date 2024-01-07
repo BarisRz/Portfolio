@@ -13,7 +13,7 @@ function App() {
         <Hero />
       </div>
       <div className="bg-third" id="skills">
-        <div className="page max-w-[1440px] m-auto">
+        <div className="page max-w-[1440px] m-auto pb-10 flex items-center">
           <Skill />
         </div>
       </div>

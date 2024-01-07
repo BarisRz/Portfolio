@@ -175,7 +175,7 @@ function Navbar() {
         </div>
       </div>
       {menuOpen && (
-        <div className="w-screen">
+        <div className="w-screen font-bold">
           <motion.div
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}

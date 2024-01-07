@@ -26,7 +26,7 @@ function Hero() {
           alt="photo de Baris GUNAY"
           className="h-10/12 max-[1440px]:w-[400px] object-cover"
         />
-        <div className="flex flex-col justify-center px-10 pb-[25vh] max-[500px]:pb-10">
+        <div className="flex flex-col justify-center px-10 max-[300px]:px-8 pb-[25vh] max-[500px]:pb-10">
           <div className="flex items-center py-4 max-[900px]:justify-center">
             <p className="font-bold text-5xl max-[1440px]:text-3xl max-sm:text-xl">
               Developpeur <span className="text-secondary">Full Stack</span>
@@ -35,6 +35,7 @@ function Hero() {
               src={reactlogo}
               alt="react logo"
               className="animate-spin-slow hover:animate-spin"
+              style={{ fill: "red" }}
             />
           </div>
           <p className="text-xl max-sm:text-lg max-[900px]:items-center max-[500px]:text-base">

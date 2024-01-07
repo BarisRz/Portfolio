@@ -44,3 +44,30 @@ li {
 .cursor-pointer:hover .underline-nav {
   width: 100%;
 }
+
+.skill-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  min-width: 65px;
+  height: 140px;
+  background-color: $primary;
+  margin: 0 -1px;
+  border: 1px solid black;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
+  @media (max-width: 900px) {
+    width: 120px;
+    min-width: 65px;
+    height: 120px;
+  }
+}
+
+.frontend {
+  @media (max-width: 900px) {
+    justify-content: center;
+  }
+}
