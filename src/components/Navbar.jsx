@@ -38,7 +38,7 @@ function Navbar() {
     >
       <div className={`w-full z-20 flex justify-center`}>
         <div className="w-[1440px]">
-          <nav className="flex py-4 justify-between max-[1440px]:px-4 max-[1440px]:py-2">
+          <nav className="flex py-3 justify-between max-[1440px]:px-4">
             <Link
               to="hero"
               spy={true}
@@ -76,6 +76,7 @@ function Navbar() {
                     to="skills"
                     spy={true}
                     smooth={true}
+                    offset={-72}
                     duration={500}
                     className="relative overflow-hidden cursor-pointer"
                   >
@@ -88,6 +89,7 @@ function Navbar() {
                     to="projet"
                     spy={true}
                     smooth={true}
+                    offset={-72}
                     duration={500}
                     className="relative overflow-hidden cursor-pointer"
                   >
@@ -100,6 +102,7 @@ function Navbar() {
                     to="contact"
                     spy={true}
                     smooth={true}
+                    offset={-72}
                     duration={500}
                     className="relative overflow-hidden cursor-pointer"
                   >
@@ -185,6 +188,7 @@ function Navbar() {
               to="skills"
               spy={true}
               smooth={true}
+              offset={-72}
               duration={500}
               className="block px-4 py-2 border-t border-b"
               onClick={() => {
@@ -203,6 +207,7 @@ function Navbar() {
               to="projet"
               spy={true}
               smooth={true}
+              offset={-72}
               duration={500}
               className="block px-4 py-2 border-t border-b"
               onClick={() => {
@@ -221,6 +226,7 @@ function Navbar() {
               to="contact"
               spy={true}
               smooth={true}
+              offset={-72}
               duration={500}
               className="block px-4 py-2 border-t border-b"
               onClick={() => {

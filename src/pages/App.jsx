@@ -9,7 +9,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="page max-w-[1440px] m-auto flex items-end" id="hero">
+      <div
+        className="page max-w-[1440px] max-[500px]:items-center m-auto flex items-end"
+        id="hero"
+      >
         <Hero />
       </div>
       <div className="bg-third" id="skills">

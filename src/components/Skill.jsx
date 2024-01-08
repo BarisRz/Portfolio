@@ -24,7 +24,7 @@ function Skill() {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
-        className="text-5xl font-extrabold pt-28 max-[500px]:text-3xl max-[500px]:text-center max-[500px]:pt-12"
+        className="text-5xl font-extrabold pt-6 max-[500px]:text-3xl max-[900px]:text-center max-[500px]:pt-12"
       >
         Mes <span className="text-secondary">compétences</span>
       </motion.p>

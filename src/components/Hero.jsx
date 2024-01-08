@@ -61,6 +61,7 @@ function Hero() {
               to="skills"
               spy={true}
               smooth={true}
+              offset={-72}
               duration={500}
               className="flex"
             >
