@@ -16,10 +16,17 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.page {
+#hero {
   min-height: 100vh;
   @media (max-width: 640px) {
-    min-height: 100vh;
+    min-height: 640px;
+  }
+}
+
+.page {
+  min-height: calc(100vh);
+  @media (max-width: 640px) {
+    min-height: (640px);
   }
 }
 

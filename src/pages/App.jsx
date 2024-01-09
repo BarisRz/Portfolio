@@ -20,7 +20,10 @@ function App() {
           <Skill />
         </div>
       </div>
-      <div className="page max-w-[1440px] m-auto" id="projet">
+      <div
+        className="page max-w-[1440px] m-auto flex items-center py-6 max-[1440px]:px-4 overflow-hidden"
+        id="projet"
+      >
         <Projet />
       </div>
       <div className="bg-third" id="contact">

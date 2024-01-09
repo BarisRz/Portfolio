@@ -74,9 +74,8 @@ function Navbar() {
                 <li>
                   <Link
                     to="skills"
-                    spy={true}
                     smooth={true}
-                    offset={-72}
+                    spy={true}
                     duration={500}
                     className="relative overflow-hidden cursor-pointer"
                   >
@@ -89,7 +88,6 @@ function Navbar() {
                     to="projet"
                     spy={true}
                     smooth={true}
-                    offset={-72}
                     duration={500}
                     className="relative overflow-hidden cursor-pointer"
                   >
@@ -102,7 +100,6 @@ function Navbar() {
                     to="contact"
                     spy={true}
                     smooth={true}
-                    offset={-72}
                     duration={500}
                     className="relative overflow-hidden cursor-pointer"
                   >
