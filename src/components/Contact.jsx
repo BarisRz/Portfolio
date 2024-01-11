@@ -1,9 +1,22 @@
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 function Contact() {
   const form = useRef();
+
+  const notify = () =>
+    toast.success("Message envoyé !", {
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      bottomOffset: 50,
+    });
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -23,6 +36,7 @@ function Contact() {
           console.log(error.text);
         }
       );
+    notify();
   };
   return (
     <>

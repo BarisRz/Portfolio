@@ -21,11 +21,11 @@ function Projet() {
         <div className="flex-1 flex gap-4 flex-col">
           <CardProjet
             delay={0}
-            titre="Wildersbook"
+            titre="BlurBuster"
             image={p1}
-            lien={"https://wildersbook.vercel.app/"}
-            liengithub={"https://github.com/BarisRz/projet1"}
-            texte="Premier projet réalisé avec pour objectif de créer un trombinoscope de la promotion. Il a été fait en JS/HTML/CSS, car nous n'avions pas encore appris React à ce moment-là."
+            lien={"https://blurbusters.vercel.app/"}
+            liengithub={"https://github.com/ghispell/TeamH-Hackathon1"}
+            texte="Site réalisé en 2j dans le cadre d'un Hackathon, blindtest visuel sur les films."
           />
           <CardProjet
             delay={0.2}
