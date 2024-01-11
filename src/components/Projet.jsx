@@ -9,11 +9,11 @@ function Projet() {
   return (
     <div className="w-full">
       <motion.p
-        initial={{ opacity: 0, y: -100 }}
+        initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="text-5xl font-bold max-[900px]:text-center"
+        className="text-5xl font-bold max-[900px]:text-center max-[500px]:text-3xl"
       >
         Mes <span className="text-secondary">projets</span>
       </motion.p>

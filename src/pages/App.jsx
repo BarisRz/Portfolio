@@ -27,7 +27,7 @@ function App() {
         <Projet />
       </div>
       <div className="bg-third" id="contact">
-        <div className="page max-w-[1440px] m-auto">
+        <div className="page max-w-[1440px] m-auto flex items-center justify-center flex-col py-6 max-[1440px]:px-4 overflow-hidden">
           <Contact />
         </div>
       </div>
