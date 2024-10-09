@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import github from "../assets/svg/github.svg";
-function CardProjet({ delay, titre, image, texte, lien, liengithub }) {
+function CardProjet({ delay, titre, image, texte, lien, liengithub, tech }) {
   return (
     <div className="flex max-[1000px]:flex-col flex-1 max-sm:items-center">
       <motion.div
@@ -38,14 +38,17 @@ function CardProjet({ delay, titre, image, texte, lien, liengithub }) {
         className="px-3 h-full flex-1 text-lg font-medium max-[1000px]:pb-8"
       >
         <p>{texte}</p>
+        <div>
+          Tech :{" "}
+          {tech.map((element, index) => (
+            <span key={index} className="font-bold pr-2">
+              {element}
+            </span>
+          ))}
+        </div>
       </motion.div>
     </div>
   );
 }
 
 export default CardProjet;
-
-// https://github.com/BarisRz/projet1 // https://wildersbook.vercel.app/
-// https://github.com/WildCodeSchool-2023-09/JS-RemoteFR-SACOD-P2-Vogue-Merry // https://elixir-maker.vercel.app/
-// https://github.com/WildCodeSchool-2023-09/wildy-game // https://wildy-game.remote-fr-2.wilders.dev/
-// https://github.com/BarisRz/Calculator // https://calculator-alpha-nine-87.vercel.app/

@@ -26,6 +26,7 @@ function Projet() {
             lien={"https://blurbusters.vercel.app/"}
             liengithub={"https://github.com/ghispell/TeamH-Hackathon1"}
             texte="Site réalisé en 2j dans le cadre d'un Hackathon, blindtest visuel sur les films."
+            tech={["React", "Tailwind", "Framer-motion"]}
           />
           <CardProjet
             delay={0.2}
@@ -34,6 +35,7 @@ function Projet() {
             lien={"https://elixir-maker.vercel.app/"}
             liengithub="https://github.com/WildCodeSchool-2023-09/JS-RemoteFR-SACOD-P2-Vogue-Merry"
             texte="Jeu basé sur l'univers d'Harry Potter, principalement sur les élixirs de cet univers. Vous devez concocter un élixir à partir d'une liste d'ingrédients."
+            tech={["React", "Tailwind", "Framer-motion"]}
           />
         </div>
         <div className="flex-1 flex gap-4 flex-col">
@@ -44,6 +46,14 @@ function Projet() {
             liengithub="https://github.com/WildCodeSchool-2023-09/wildy-game"
             lien={"https://wildy-game.remote-fr-2.wilders.dev/"}
             texte="Projet toujours en cours, dont l'objectif est d'attirer des personnes vers une salle d'arcade réelle à travers des mini-jeux."
+            tech={[
+              "React",
+              "Tailwind",
+              "Framer-motion",
+              "Node.JS",
+              "Express",
+              "MySQL",
+            ]}
           />
           <CardProjet
             delay={0.6}
@@ -52,6 +62,7 @@ function Projet() {
             lien={"https://calculator-alpha-nine-87.vercel.app/"}
             liengithub="https://github.com/BarisRz/Calculator"
             texte="Une calculatrice simple conçue principalement pour me permettre de m'entraîner à utiliser Tailwind."
+            tech={["React", "Tailwind", "Framer-motion"]}
           />
         </div>
       </div>
