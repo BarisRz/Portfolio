@@ -21,12 +21,12 @@ function Projet() {
         <div className="flex-1 flex gap-4 flex-col">
           <CardProjet
             delay={0}
-            titre="BlurBuster"
+            titre="MiniGames"
             image={p1}
-            lien={"https://blurbusters.vercel.app/"}
-            liengithub={"https://github.com/ghispell/TeamH-Hackathon1"}
-            texte="Site réalisé en 2j dans le cadre d'un Hackathon, blindtest visuel sur les films."
-            tech={["React", "Tailwind", "Framer-motion"]}
+            lien={"https://mini-games-ruddy.vercel.app/"}
+            liengithub={"https://github.com/BarisRz/MiniGames"}
+            texte="Plusieurs mini jeux, dont un blindtest visuel avec effet de pixelisation"
+            tech={["React", "Tailwind", "Fuse.js"]}
           />
           <CardProjet
             delay={0.2}
