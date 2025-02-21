@@ -15,6 +15,8 @@ import mysql from "../assets/svg/mysql.svg";
 import devtools from "../assets/svg/devtools.svg";
 import figma from "../assets/svg/figma.svg";
 import photoshop from "../assets/svg/photoshop.svg";
+import docker from "../assets/svg/docker.svg";
+import reactquery from "../assets/svg/react-query.png";
 
 function Skill() {
   return (
@@ -86,6 +88,12 @@ function Skill() {
             Vite
           </p>
         </div>
+        <div className="skill-icon group flex-col hover:border-secondary">
+          <img src={reactquery} alt="react query icon" className="h-20" />
+          <p className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 absolute top-28 max-[900px]:top-24 font-semibold">
+            React Query
+          </p>
+        </div>
       </motion.div>
       <motion.p
         initial={{ opacity: 0, y: -50 }}
@@ -119,6 +127,12 @@ function Skill() {
           <img src={mysql} alt="mysql icon" className="h-20" />
           <p className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 absolute top-28 max-[900px]:top-24 font-semibold">
             MySQL
+          </p>
+        </div>
+        <div className="skill-icon group flex-col hover:border-secondary">
+          <img src={docker} alt="docker icon" className="h-20" />
+          <p className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 absolute top-28 max-[900px]:top-24 font-semibold">
+            Docker
           </p>
         </div>
       </motion.div>

@@ -4,6 +4,7 @@ import p1 from "../assets/img/P1.png";
 import p2 from "../assets/img/P2.png";
 import p3 from "../assets/img/P3.png";
 import calculette from "../assets/img/Calculette.png";
+import Lorga from "../assets/img/Lorga.png";
 
 function Projet() {
   return (
@@ -28,7 +29,7 @@ function Projet() {
             texte="Plusieurs mini jeux, dont un blindtest visuel avec effet de pixelisation"
             tech={["React", "Tailwind", "Fuse.js"]}
           />
-          <CardProjet
+          {/* <CardProjet
             delay={0.2}
             titre="Elixir Maker"
             image={p2}
@@ -36,6 +37,24 @@ function Projet() {
             liengithub="https://github.com/WildCodeSchool-2023-09/JS-RemoteFR-SACOD-P2-Vogue-Merry"
             texte="Jeu basé sur l'univers d'Harry Potter, principalement sur les élixirs de cet univers. Vous devez concocter un élixir à partir d'une liste d'ingrédients."
             tech={["React", "Tailwind", "Framer-motion"]}
+          /> */}
+          <CardProjet
+            delay={0.6}
+            titre="Lorga"
+            image={Lorga}
+            lien={"http://51.178.80.168:5173/"}
+            liengithub="https://github.com/BarisRz/Calculator"
+            texte="Projet FullStack en solo, où je gère aussi l'hébergement. Lorga est un site comme Trello où le but est de s'organiser. Le projet est toujours en cours"
+            tech={[
+              "React",
+              "Tailwind",
+              "Framer-motion",
+              "Docker",
+              "React-Query",
+              "Express",
+              "MySQL",
+              "Node",
+            ]}
           />
         </div>
         <div className="flex-1 flex gap-4 flex-col">
