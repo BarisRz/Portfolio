@@ -1,6 +1,14 @@
 import { motion } from "framer-motion";
 import github from "../assets/svg/github.svg";
-function CardProjet({ delay, titre, image, texte, lien, liengithub, tech }) {
+function CardProjet({
+  delay,
+  titre,
+  image,
+  texte,
+  lien,
+  liengithub = "",
+  tech,
+}) {
   return (
     <div className="flex max-[1000px]:flex-col flex-1 max-sm:items-center">
       <motion.div
@@ -21,13 +29,15 @@ function CardProjet({ delay, titre, image, texte, lien, liengithub, tech }) {
         </div>
         <div className="flex items-center h-[50px] px-2 justify-between">
           <p className="text-xl font-medium">{titre}</p>
-          <a href={liengithub} target="_blank" rel="noopener noreferrer">
-            <img
-              src={github}
-              alt="github link"
-              className="h-8 hover:scale-125 transition"
-            />
-          </a>
+          {liengithub && (
+            <a href={liengithub} target="_blank" rel="noopener noreferrer">
+              <img
+                src={github}
+                alt="github link"
+                className="h-8 hover:scale-125 transition"
+              />
+            </a>
+          )}
         </div>
       </motion.div>
       <motion.div

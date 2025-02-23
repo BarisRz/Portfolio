@@ -43,7 +43,6 @@ function Projet() {
             titre="Lorga"
             image={Lorga}
             lien={"http://51.178.80.168:5173/"}
-            liengithub="https://github.com/BarisRz/Calculator"
             texte="Projet FullStack en solo, où je gère aussi l'hébergement. Lorga est un site comme Trello où le but est de s'organiser. Le projet est toujours en cours"
             tech={[
               "React",
