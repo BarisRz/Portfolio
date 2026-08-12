@@ -26,7 +26,7 @@ function Contact() {
         import.meta.env.VITE_SERVICE_ID,
         import.meta.env.VITE_TEMPLATE_ID,
         form.current,
-        import.meta.env.VITE_PUBLIC_KEY
+        import.meta.env.VITE_PUBLIC_KEY,
       )
       .then(
         (result) => {
@@ -34,7 +34,7 @@ function Contact() {
         },
         (error) => {
           console.log(error.text);
-        }
+        },
       );
     notify();
   };
@@ -49,7 +49,7 @@ function Contact() {
       >
         Me <span className="text-secondary">contacter</span>
       </motion.p>
-      <div className="flex flex-col items-center font-bold text-3xl">
+      <div className="flex flex-col items-center font-bold text-3xl max-[600px]:text-xl">
         <p>Mail : baris.gunay.pro@gmail.com</p>
         <p>Téléphone : 0781135767</p>
       </div>
