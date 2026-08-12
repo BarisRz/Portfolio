@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import CardProjet from "./CardProjet";
 import p1 from "../assets/img/P1.png";
 import p2 from "../assets/img/P2.png";
-import p3 from "../assets/img/P3.png";
+import p3 from "../assets/img/playlog.png";
 import calculette from "../assets/img/Calculette.png";
 import Lorga from "../assets/img/Lorga.png";
 
@@ -21,6 +21,24 @@ function Projet() {
       <div className="flex gap-4 pt-6 max-[1000px]:flex-col">
         <div className="flex-1 flex gap-4 flex-col">
           <CardProjet
+            delay={0.6}
+            titre="Lorga"
+            image={Lorga}
+            lien={"https://frontend-production-5718.up.railway.app/"}
+            texte="Projet FullStack en solo, où je gère aussi l'hébergement. Lorga est un site comme Trello où le but est de s'organiser. Le projet est toujours en cours"
+            tech={[
+              "React",
+              "Tailwind",
+              "Framer-motion",
+              "Docker",
+              "React-Query",
+              "Express",
+              "MySQL",
+              "Node",
+              "Railway",
+            ]}
+          />
+          <CardProjet
             delay={0}
             titre="MiniGames"
             image={p1}
@@ -38,32 +56,16 @@ function Projet() {
             texte="Jeu basé sur l'univers d'Harry Potter, principalement sur les élixirs de cet univers. Vous devez concocter un élixir à partir d'une liste d'ingrédients."
             tech={["React", "Tailwind", "Framer-motion"]}
           /> */}
-          <CardProjet
-            delay={0.6}
-            titre="Lorga"
-            image={Lorga}
-            lien={"http://51.178.80.168:5173/"}
-            texte="Projet FullStack en solo, où je gère aussi l'hébergement. Lorga est un site comme Trello où le but est de s'organiser. Le projet est toujours en cours"
-            tech={[
-              "React",
-              "Tailwind",
-              "Framer-motion",
-              "Docker",
-              "React-Query",
-              "Express",
-              "MySQL",
-              "Node",
-            ]}
-          />
         </div>
         <div className="flex-1 flex gap-4 flex-col">
           <CardProjet
             delay={0.4}
-            titre="Wildy Gamy"
+            titre="PlayLog"
             image={p3}
-            liengithub="https://github.com/WildCodeSchool-2023-09/wildy-game"
-            lien={"https://wildy-game.remote-fr-2.wilders.dev/"}
-            texte="Projet toujours en cours, dont l'objectif est d'attirer des personnes vers une salle d'arcade réelle à travers des mini-jeux."
+            liengithub=""
+            lien={"https://github.com/BarisRz/CP4"}
+            texte="Projet d'école où on avait seulement un week-end pour créer un site web. Le but était de créer un site web pour les joueurs de jeux vidéo afin qu'ils puissent suivre leurs parties et leurs statistiques.
+            "
             tech={[
               "React",
               "Tailwind",
